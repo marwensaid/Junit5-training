@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
-public class MethodNameOrderedTests 
+class MethodNameOrderedTests
 {
 	@Test
 	void testE() {

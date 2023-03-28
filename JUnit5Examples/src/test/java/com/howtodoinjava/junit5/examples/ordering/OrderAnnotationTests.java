@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class OrderAnnotationTests {
+class OrderAnnotationTests {
 	@Order(5)
 	@Test
 	void testE() {

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(MethodOrderer.DisplayName.class)
-public class DisplayNameOrderedTests
+class DisplayNameOrderedTests
 {
 	@DisplayName("5")
 	@Test

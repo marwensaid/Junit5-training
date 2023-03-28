@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(DeprecatedInEndTestOrder.class)
-public class CustomOrderTests {
+class CustomOrderTests {
 	@Test
 	@Deprecated
 	void testC() {

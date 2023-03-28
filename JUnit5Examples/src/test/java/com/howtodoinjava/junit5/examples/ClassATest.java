@@ -9,6 +9,6 @@ public class ClassATest
 {
 	@Test
 	@Tag("userManagement")
-	void testCaseA(TestInfo testInfo) {
+	void testCaseA() {
 	}
 }

@@ -3,7 +3,7 @@ package com.howtodoinjava.junit5.examples.xmlReport;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class HelloTest {
+class HelloTest {
   @Test
   void testOne(){
     Assertions.assertTrue(true);
@@ -11,6 +11,6 @@ public class HelloTest {
 
   @Test
   void testTwo(){
-    Assertions.assertTrue(false);
+    Assertions.fail();
   }
 }

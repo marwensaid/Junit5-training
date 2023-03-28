@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(MethodOrderer.Random.class)
-public class RandomOrderedTests {
+class RandomOrderedTests {
 	@Test
 	void testE() {
 		assertTrue(true);

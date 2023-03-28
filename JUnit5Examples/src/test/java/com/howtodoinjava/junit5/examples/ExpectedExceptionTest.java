@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.platform.suite.api.SelectPackages;
 
 @SelectPackages("com.howtodoinjava.junit5.examples")
-public class ExpectedExceptionTest 
+class ExpectedExceptionTest
 {
 	@Test
 	void testExpectedException() {
@@ -25,14 +25,14 @@ public class ExpectedExceptionTest
 		});
 	}
 	
-	/*@Test
+	@Test
 	void testExpectedExceptionFail() {
-	 
+
 		NumberFormatException thrown = Assertions
 					.assertThrows(NumberFormatException.class, () -> {
 						Integer.parseInt("1");
 					}, "NumberFormatException error was expected");
-		
+
 		Assertions.assertEquals("Some expected message", thrown.getMessage());
-	}*/
+	}
 }

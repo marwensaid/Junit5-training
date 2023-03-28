@@ -1,8 +1,5 @@
 package com.howtodoinjava.junit5.examples;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.temporal.ChronoUnit;
@@ -23,10 +20,12 @@ import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.NullSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class ParameterizedTests 
+import static org.junit.jupiter.api.Assertions.*;
+
+class ParameterizedTests
 {
-	boolean isPalindrome(String s) {
-		return s == null ? false : StringUtils.reverse(s).equals(s);
+	boolean isPalindrome(String value) {
+		return value != null && StringUtils.reverse(value).equals(value);
 	}
 	
 	static Stream<String> argsProviderFactory() {
@@ -42,7 +41,7 @@ public class ParameterizedTests
 	@ParameterizedTest
 	@NullSource
 	void testMethodNullSource(Integer argument) {
-		assertTrue(argument == null);
+		assertNull(argument);
 	}
 	
 	@ParameterizedTest
@@ -80,12 +79,12 @@ public class ParameterizedTests
 	    assertTrue(age > 0);
 	}
 	
-	/*@ParameterizedTest
+	@ParameterizedTest
 	@CsvFileSource(resources = "employeeData.csv", numLinesToSkip = 0)
 	void testWithCsvFileSource(String name, int age) {
 		assertNotNull(name);
 	    assertTrue(age > 0);
-	}*/
+	}
 
 	
 	@ParameterizedTest
@@ -132,25 +131,25 @@ class Employee
 	}
 	
 	public long getId() {
-		return id;
+		return this.id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
 	public LocalDate getDob() {
-		return dob;
+		return this.dob;
 	}
 	public void setDob(LocalDate dob) {
 		this.dob = dob;
 	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", dob=" + dob + "]";
+		return "Employee [id=" + this.id + ", name=" + this.name + ", dob=" + this.dob + "]";
 	}
 }

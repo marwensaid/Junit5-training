@@ -11,7 +11,7 @@ public class BeforeAllTest {
 
 	@DisplayName("Add operation test")
 	@RepeatedTest(5)
-	void addNumber(TestInfo testInfo, RepetitionInfo repetitionInfo) {
+	void addNumber(RepetitionInfo repetitionInfo) {
 		System.out.println("Running test -> " + repetitionInfo.getCurrentRepetition());
 		Assertions.assertEquals(2, Calculator.add(1, 1), "1 + 1 should equal 2");
 	}

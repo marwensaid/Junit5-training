@@ -8,12 +8,12 @@ import org.junit.jupiter.api.MethodOrdererContext;
 
 public class DeprecatedInEndTestOrder implements MethodOrderer {
 
-	private Comparator<MethodDescriptor> comparator = Comparator
+	private final Comparator<MethodDescriptor> comparator = Comparator
 				.comparing(md -> md.getMethod().isAnnotationPresent(Deprecated.class));
 
 	@Override
 	public void orderMethods(MethodOrdererContext context) {
 
-		context.getMethodDescriptors().sort(comparator);
+		context.getMethodDescriptors().sort(this.comparator);
 	}
 }

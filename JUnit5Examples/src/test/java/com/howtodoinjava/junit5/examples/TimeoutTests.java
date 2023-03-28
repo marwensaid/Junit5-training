@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
 @Timeout(3)
-public class TimeoutTests {
+class TimeoutTests {
 
 	/*@Test
 	void testMethodOne() throws InterruptedException {
@@ -28,8 +28,7 @@ public class TimeoutTests {
         });
 	}
 	
-	String getValue() throws InterruptedException {
+	void getValue() throws InterruptedException {
 		TimeUnit.SECONDS.sleep(2);
-		return "";
 	}
 }
