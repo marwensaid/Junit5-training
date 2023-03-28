@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 
 public class ClassATest 
 {
-	@Tag("production")
+	//TODO: taggé ce test pour la prod
 	@Test
-	@DisplayName("testCaseA inside ClassATest inside packageA")
+	//TODO: ajouter un nom qui s'affiche pour ce test
 	public void testCaseA() {
 		
 	}

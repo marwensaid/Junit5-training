@@ -6,7 +6,7 @@ import org.junit.platform.suite.api.SelectPackages;
 
 @SelectPackages("com.howtodoinjava.junit5.examples")
 @IncludePackages("com.howtodoinjava.junit5.examples.packageC")
-@ExcludeTags("PROD")
+//TODO: exclure un tag pour l'exe
 public class JUnit5TestSuite {
 
 }

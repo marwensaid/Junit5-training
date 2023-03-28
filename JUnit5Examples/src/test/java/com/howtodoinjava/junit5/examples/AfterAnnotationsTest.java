@@ -11,11 +11,12 @@ import org.junit.jupiter.api.TestInfo;
 public class AfterAnnotationsTest {
 
 	@DisplayName("Add operation test")
+	//TODO:  répéter le test 5 fois
 	@RepeatedTest(5)
 	void addNumber(TestInfo testInfo, RepetitionInfo repetitionInfo) 
 	{
 		System.out.println("Running test -> " + repetitionInfo.getCurrentRepetition());
-		Assertions.assertEquals(2, Calculator.add(1, 1), "1 + 1 should equal 2");
+		//TODO: faire un test de la class Calculator
 	}
 	
 	@AfterAll

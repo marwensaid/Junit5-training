@@ -16,17 +16,16 @@ public class AppTest {
 	    System.out.println("Working on test " + testInfo.getDisplayName());
 	}
      
-    @BeforeAll
+    //TODO: cette méthode doit s'exe avant tout les tests
     static void setup(){
         System.out.println("@BeforeAll executed");
     }
      
-    @BeforeEach
+    //TODO: cette méthode doit s'exe avant chaque test
     void setupThis(){
         System.out.println("@BeforeEach executed");
     }
      
-    //@Tag("DEV")
     @Test
     void testCalAdd()
     {
@@ -51,7 +50,7 @@ public class AppTest {
     }
      
     @Tag("PROD")
-    @Disabled
+    //TODO: faire que ce test soit ignoré
     @Test
     void testCalcTwo()
     {
@@ -59,12 +58,12 @@ public class AppTest {
         Assertions.assertEquals( 6 , Calculator.add(2, 4));
     }
      
-    @AfterEach
+    //TODO: cette méthode doit s'exe après chaque test
     void tearThis(){
         System.out.println("@AfterEach executed");
     }
      
-    @AfterAll
+    //TODO: cette méthode doit s'exe après tout test
     static void tear(){
         System.out.println("@AfterAll executed");
     }

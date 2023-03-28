@@ -4,10 +4,11 @@ import org.junit.platform.suite.api.SelectPackages;
 import org.junit.platform.suite.api.Suite;
 import org.junit.platform.suite.api.SuiteDisplayName;
 
-@SelectPackages({"com.howtodoinjava.junit5.examples.packageA"
-				,"com.howtodoinjava.junit5.examples.packageB"})
-@Suite
-@SuiteDisplayName("A demo Test Suite")
+
+//TODO: jouer les tests des class ClassATest et ClassBTest ici
+//TODO: faire en sorte que ça s'affiche comme une classe de test de type suite
+//TODO: donner un nom à cette suite
+
 public class JUnit5TestSuiteExample {
 
 }

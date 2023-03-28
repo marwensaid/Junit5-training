@@ -7,14 +7,12 @@ public class AssumptionsTest {
 
   @Test
   void testOnDev() {
-    System.setProperty("ENV", "DEV");
-    Assumptions.assumeTrue("DEV".equals(System.getProperty("ENV")), AssumptionsTest::message);
+    //TODO: set un ENV (dev) et tester le get de cette property
   }
 
   @Test
   void testOnProd() {
-    System.setProperty("ENV", "PROD");
-    Assumptions.assumeFalse("DEV".equals(System.getProperty("ENV")));
+    //TODO: set un ENV (prod) et tester le get de cette property
   }
 
   private static String message() {

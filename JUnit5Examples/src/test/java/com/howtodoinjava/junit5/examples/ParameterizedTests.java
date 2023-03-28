@@ -25,8 +25,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 public class ParameterizedTests 
 {
-	boolean isPalindrome(String s) {
-		return s == null ? false : StringUtils.reverse(s).equals(s);
+	boolean isPalindrome(String result) {
+		return result != null && StringUtils.reverse(result).equals(result);
 	}
 	
 	static Stream<String> argsProviderFactory() {
@@ -90,10 +90,10 @@ public class ParameterizedTests
 	
 	@ParameterizedTest
 	@ArgumentsSource(EmployeesArgumentsProvider.class)
-	void testArgumentsSource(Employee e, LocalDate date, Direction d) {
-	    assertTrue(Period.between(e.getDob(), LocalDate.now()).get(ChronoUnit.YEARS) > 40);
+	void testArgumentsSource(Employee employee, LocalDate date, Direction direction) {
+	    assertTrue(Period.between(employee.getDob(), LocalDate.now()).get(ChronoUnit.YEARS) > 40);
 	    assertNotNull(date);
-	    assertNotNull(d);
+	    assertNotNull(direction);
 	}
 	
 	@ParameterizedTest
@@ -132,25 +132,25 @@ class Employee
 	}
 	
 	public long getId() {
-		return id;
+		return this.id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
 	public LocalDate getDob() {
-		return dob;
+		return this.dob;
 	}
 	public void setDob(LocalDate dob) {
 		this.dob = dob;
 	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", dob=" + dob + "]";
+		return "Employee [id=" + this.id + ", name=" + this.name + ", dob=" + this.dob + "]";
 	}
 }

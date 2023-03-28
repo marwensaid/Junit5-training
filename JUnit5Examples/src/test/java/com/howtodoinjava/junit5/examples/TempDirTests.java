@@ -19,11 +19,11 @@ public class TempDirTests {
 
 	@Test
 	public void tempDirectoryTestOne() throws IOException {
-		Path tempFile = tempDir.resolve("test.txt");
+		Path tempFile = this.tempDir.resolve("test.txt");
 
-		List<String> lines = Arrays.asList("howtodoinjava.com");
+		List<String> lines = List.of("howtodoinjava.com");
 
-		Files.write(tempFile, Arrays.asList("howtodoinjava.com"));
+		Files.write(tempFile, List.of("howtodoinjava.com"));
 
 		Assertions.assertTrue(Files.exists(tempFile), "Temp File should have been created");
 		Assertions.assertEquals(Files.readAllLines(tempFile), lines);
@@ -32,6 +32,6 @@ public class TempDirTests {
 	@BeforeEach
 	public void setup(@TempDir Path tempDir) throws IOException {
 		Path tempFile = tempDir.resolve("test.txt");
-		Files.write(tempFile, Arrays.asList("some content"));
+		Files.write(tempFile, List.of("some content"));
 	}
 }

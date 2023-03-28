@@ -9,8 +9,6 @@ public class HelloTest {
     Assertions.assertTrue(true);
   }
 
-  @Test
-  void testTwo(){
-    Assertions.assertTrue(false);
-  }
+  //TODO: créer un 2éme test qui sera toujours RED (qui passe jamais)
+
 }

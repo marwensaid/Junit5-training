@@ -7,7 +7,7 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-@TestMethodOrder(MethodOrderer.DisplayName.class)
+//TODO: lancer les tests selon l'ordre numérique
 public class DisplayNameOrderedTests
 {
 	@DisplayName("5")

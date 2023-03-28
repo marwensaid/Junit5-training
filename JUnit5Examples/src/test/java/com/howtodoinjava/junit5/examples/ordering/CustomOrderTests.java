@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-@TestMethodOrder(DeprecatedInEndTestOrder.class)
+//TODO: lancer les tests "deprecated" en dernier
 public class CustomOrderTests {
 	@Test
 	@Deprecated

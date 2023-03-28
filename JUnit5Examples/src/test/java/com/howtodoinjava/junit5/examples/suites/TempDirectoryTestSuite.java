@@ -7,7 +7,7 @@ import org.junit.platform.suite.api.Suite;
 import com.howtodoinjava.junit5.examples.TempDirTests;
 
 @Suite
-@SelectClasses(TempDirTests.class)
+//TODO: cette suite va exécuter les test de la classe TempDirTests
 public class TempDirectoryTestSuite {
 
 }
