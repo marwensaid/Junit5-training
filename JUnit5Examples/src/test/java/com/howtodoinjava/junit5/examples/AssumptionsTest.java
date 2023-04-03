@@ -1,6 +1,5 @@
 package com.howtodoinjava.junit5.examples;
 
-import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionsTest {

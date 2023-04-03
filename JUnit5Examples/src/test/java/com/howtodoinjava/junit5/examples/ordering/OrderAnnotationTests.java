@@ -1,11 +1,9 @@
 package com.howtodoinjava.junit5.examples.ordering;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 //TODO: lancer en précisant un ordre
 public class OrderAnnotationTests {

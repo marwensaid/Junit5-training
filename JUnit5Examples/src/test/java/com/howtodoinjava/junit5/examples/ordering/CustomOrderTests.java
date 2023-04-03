@@ -1,9 +1,8 @@
 package com.howtodoinjava.junit5.examples.ordering;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 //TODO: lancer les tests "deprecated" en dernier
 public class CustomOrderTests {

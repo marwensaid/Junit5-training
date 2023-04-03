@@ -1,10 +1,10 @@
 package com.howtodoinjava.junit5.examples.ordering;
 
-import java.util.Comparator; 
-
 import org.junit.jupiter.api.MethodDescriptor;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.MethodOrdererContext;
+
+import java.util.Comparator;
 
 public class DeprecatedInEndTestOrder implements MethodOrderer {
 
@@ -14,6 +14,6 @@ public class DeprecatedInEndTestOrder implements MethodOrderer {
 	@Override
 	public void orderMethods(MethodOrdererContext context) {
 
-		context.getMethodDescriptors().sort(comparator);
+		context.getMethodDescriptors().sort(this.comparator);
 	}
 }

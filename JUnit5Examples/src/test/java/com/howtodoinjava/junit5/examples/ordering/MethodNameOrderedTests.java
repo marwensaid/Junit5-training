@@ -1,10 +1,8 @@
 package com.howtodoinjava.junit5.examples.ordering;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 //TODO: lancer avec l'ordre alphabétique
 public class MethodNameOrderedTests 

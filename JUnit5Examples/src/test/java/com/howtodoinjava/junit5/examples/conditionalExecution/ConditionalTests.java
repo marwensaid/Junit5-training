@@ -1,21 +1,9 @@
 package com.howtodoinjava.junit5.examples.conditionalExecution;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.condition.DisabledForJreRange;
-import org.junit.jupiter.api.condition.DisabledIf;
-import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
-import org.junit.jupiter.api.condition.DisabledOnJre;
-import org.junit.jupiter.api.condition.DisabledOnOs;
-import org.junit.jupiter.api.condition.EnabledForJreRange;
-import org.junit.jupiter.api.condition.EnabledIf;
-import org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable;
-import org.junit.jupiter.api.condition.EnabledIfSystemProperty;
-import org.junit.jupiter.api.condition.EnabledOnJre;
-import org.junit.jupiter.api.condition.EnabledOnOs;
-import org.junit.jupiter.api.condition.JRE;
-import org.junit.jupiter.api.condition.OS;
+import org.junit.jupiter.api.condition.*;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ConditionalTests {
 	@Test

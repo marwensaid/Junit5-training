@@ -1,11 +1,11 @@
 package com.howtodoinjava.junit5.examples;
 
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 @Timeout(3)
 public class TimeoutTests {
